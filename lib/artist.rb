@@ -11,7 +11,7 @@ class Artist
   @@artists = []
 
   def initialize #instance method, so self refers to the instance of the class on which you are operating but.all is a class method 
-    self.class.all << self
+    super #so that it grabs the other info from the parent class 
     @songs = []
   end
 
