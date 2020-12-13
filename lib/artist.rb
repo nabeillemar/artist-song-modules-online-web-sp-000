@@ -9,8 +9,8 @@ class Artist
 
   @@artists = []
 
-  def initialize
-    @@artists << self
+  def initialize #instance method, so self refers to the instance of the class on which you are operating but.all is a class method 
+    self.class.all << self
     @songs = []
   end
 
